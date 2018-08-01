@@ -38,8 +38,8 @@ function createRock(x) {
   rock.style.top = top;
   GAME.appendChild(rock);
   
-  if (top < 360) {
-    moveRock();
+ if (top < GAME_HEIGHT) {
+    window.requestAnimationFrame(moveRock);
   }
 
   function moveRock() {
@@ -54,7 +54,9 @@ function createRock(x) {
         rock.remove();
       }
   }
-  window.requestAnimationFrame(moveRock);
+  
+  
+  
   
   ROCKS.push(rock);
   return rock;
