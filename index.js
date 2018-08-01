@@ -39,7 +39,7 @@ function createRock(x) {
   GAME.appendChild(rock);
   
  if (top < GAME_HEIGHT) {
-    moveRock()
+    moveRock();
   }
 
   function moveRock() {
