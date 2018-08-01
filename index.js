@@ -39,7 +39,7 @@ function createRock(x) {
   GAME.appendChild(rock);
   
  if (top < GAME_HEIGHT) {
-    window.requestAnimationFrame(moveRock);
+    moveRock()
   }
 
   function moveRock() {
